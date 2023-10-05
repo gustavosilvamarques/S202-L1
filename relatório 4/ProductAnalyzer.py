@@ -42,7 +42,7 @@ class ProductAnalyzer:
         result = list(db.collection.aggregate(pipeline))
         return result
 
-    def produtosAcimaDeUmaUnidade(self): #produtos que tiveram uma quantidade vendida superior a uma unidade
+    def produtosAcimaDeUmaUnidade(self): #produtos que tiveram uma quantidade vendida superior a uma unidade=
         pipeline = [
             {"$unwind": "$produtos"},  # desestruturando produtos
             {"$match": {"produtos.quantidade": {"$gt": 1}}},  # aqui é tipo um if. No caso seria if(produtos.quantidade > 1)
