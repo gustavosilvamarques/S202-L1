@@ -2,7 +2,7 @@ from database import Database
 from match import Game # Importe a classe GameDatabase, substituindo 'match' por 'game' se necessário
 
 # Cria uma instância da classe Database, passando os dados de conexão com o banco de dados Neo4j
-db = Database("bolt://44.195.44.152:7687", "neo4j", "motors-hill-fall")
+db = Database("bolt://3.238.222.103:7687", "neo4j", "transportation-boresights-beliefs")
 db.drop_all()
 
 # Criando uma instância da classe GameDatabase para interagir com o banco de dados
